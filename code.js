@@ -112,7 +112,7 @@ function updateDisplay() {
 		var buySummary = apiData.products[id].buy_summary;
 		var sellSummary = apiData.products[id].sell_summary;
 
-		// Check for empty arrays - if yoy can't buy or sell the item then there's
+		// Check for empty arrays - if you can't buy or sell the item then there's
 		// no point including it
 		if (Array.isArray(buySummary) && Array.isArray(sellSummary) && buySummary.length > 0 && sellSummary.length > 0) {
 			// Find the highest buy order price and the lowest sell offer price in the
@@ -176,7 +176,7 @@ function updateDisplay() {
 	// Create table header. If maxOffers is >1, an extra column is added to show
 	// the number of offers required to buy/sell that many items
 	var table = $('<table>').addClass('results');
-	var headerFields = "<th>Item Name</th><th>Sales Backlog</th><th>Buy Order at</th><th>Sell Offer at</th><th>Profit per Item</th><th>Quantity</th>";
+	var headerFields = "<th>Item Name</th><th>Sales Backlog</th><th>Buy Order at</th><th>Sell Offer at</th><th>Profit per Item</th><th>Quantity</th><th>Score</th>";
 	if (maxOffers > 1) {
 		headerFields += "<th>Number of Offers</th>";
 	}
