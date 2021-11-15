@@ -176,7 +176,8 @@ function updateDisplay() {
 	// Create table header. If maxOffers is >1, an extra column is added to show
 	// the number of offers required to buy/sell that many items
 	var table = $('<table>').addClass('results');
-	var headerFields = "<th>Item Name</th><th>Sales Backlog</th><th>Buy Order at</th><th>Sell Offer at</th><th>Profit per Item</th><th>Quantity</th><th>Score</th>";
+	//var headerFields = "<th>Item Name</th><th>Sales Backlog</th><th>Buy Order at</th><th>Sell Offer at</th><th>Profit per Item</th><th>Quantity</th><th>Score</th>";
+	var headerFields = "<th>Item Name</th><th>Sales Backlog</th><th>Buy Order at</th><th>Sell Offer at</th><th>Profit per Item</th><th>Quantity</th>";
 	if (maxOffers > 1) {
 		headerFields += "<th>Number of Offers</th>";
 	}
