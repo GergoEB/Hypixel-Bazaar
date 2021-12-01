@@ -28,8 +28,7 @@
     100%{background-position:0% 82%}
 }
 /** Page formatting */
-html { 
-	.wrapper { 
+html {  
   	height: 100%;
   	width: 100%;
   	left:0;
@@ -43,7 +42,7 @@ html {
 	-webkit-animation: rainbow 18s ease infinite;
 	-z-animation: rainbow 18s ease infinite;
 	-o-animation: rainbow 18s ease infinite;
-  	animation: rainbow 18s ease infinite;}
+  	animation: rainbow 18s ease infinite;
 }
 body {
   max-width: 66em;
